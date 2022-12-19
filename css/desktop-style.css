@@ -525,12 +525,36 @@ body {
 /* Стили для формы обратной связи */
 
 .feedBack {
-    /* background-color: #DC634F; */
-    height: 100vh;
+    height: calc(100vh + 2rem);
     background: url(../assets/images/form-bg.svg), linear-gradient(to bottom, #DC634F, #DC634F);
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 100vh;
+}
+
+.feedBack-wrapper {
+    background-image: url('../assets/images/form-bg.svg');
+    height: 100%;
+}
+
+.feedBack-overlay {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    background-color: #dc634f;
+    pointer-events: none;
+    position: fixed;
+    -webkit-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+    z-index: 1;
+}
+
+.feedBack-overlay_showed {
+    opacity: 1;
 }
 
 .feedBack__title {
@@ -543,6 +567,8 @@ body {
     color: #FFFFFF;
     margin: 0;
     margin-top: 30px;
+    position: relative;
+    z-index: 2;
 }
 
 .feedBack__subtitle {
@@ -552,6 +578,8 @@ body {
     line-height: 125%;
     color: #FFFFFF;
     margin-bottom: 0;
+    position: relative;
+    z-index: 2;
 }
 
 .feedBack__form-container {
@@ -564,6 +592,8 @@ body {
     background-color: white;
     display: flex;
     transition: all .3s;
+    position: relative;
+    z-index: 2;
 }
 
 .feedBack__form {
@@ -747,6 +777,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 .contacts__title {
@@ -862,6 +894,8 @@ body {
     display: flex;
     justify-content: center;
     padding: 55px 0;
+    position: relative;
+    z-index: 2;
 }
 
 

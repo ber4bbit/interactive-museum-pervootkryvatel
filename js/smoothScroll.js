@@ -8,6 +8,6 @@ const anchors = document.querySelectorAll('a[href*="#"]')
             document.getElementById(blockID).scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
-            })
+            }, true)
         })
     }
