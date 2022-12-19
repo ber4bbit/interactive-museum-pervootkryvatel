@@ -1,0 +1,1072 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Стили для куки */
+
+.cookie {
+    position: fixed;
+    bottom: 0;
+    z-index: 16;
+    display: flex;
+    background-color: #19727B;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 0;
+    transition: all .3s;
+}
+
+.cookie_hidden {
+    opacity: 0;
+}
+
+.cookie__text {
+    margin: 0;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    color: #FFFFFF;
+    width: 60rem;
+}
+
+.cookie__btn {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    color: #30322F;
+    padding: 6px 30px;
+    background-color: white;
+    border: none;
+    border-radius: 17px;
+    transition: all .3s;
+}
+
+.cookie__btn_hidden {
+    pointer-events: none;
+}
+
+.cookie__btn:hover {
+    cursor: pointer;
+    background-color: rgb(209, 209, 209);
+}
+
+/* Стили для шапки сайта */
+
+.header {
+    height: 45rem;
+    position: relative;
+    width: 100%;
+    background: url(../assets/images/1.svg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+
+.header__background {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.header__navigation {
+    width: 70%;
+    margin-left: 20rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 11;
+}
+
+.header__navigation-item {
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    box-shadow: 0.0110991px 0.2069px 6.73392px rgba(0, 0, 0, 0.11), 0.00452184px 0.0842925px 3.37655px rgba(0, 0, 0, 0.0863704), 0.00102769px 0.0191574px 1.63072px rgba(0, 0, 0, 0.052963);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+}
+
+.header__navigation-item_search {
+    /* width: inherit; */
+    -webkit-appearance: none;
+    outline: 0;
+    border: none;
+    padding: 0;
+    background: url(../assets/icons/navigation-search-icon.svg), white;
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    background-position: center;
+    font-family: 'Raleway';
+}
+
+.header__navigation-item_search-active {
+    width: 16rem !important;
+    border-radius: 24px;
+    background-position: 90% 50%;
+    padding-left: 1rem;
+}
+
+.header__navigation-item_burger {
+    width: 150px !important;
+    height: 130px !important;
+    border-radius: 11px;
+}
+
+.navigation-menu__burger-list {
+    opacity: 0;
+    position: absolute;
+    left: 2%;
+    top: 20%;
+    display: none;
+    transition: all .3s;
+}
+
+.navigation-menu__burger-list_visible {
+    opacity: 1;
+    display: block;
+}
+
+.header__navigation-item a {
+    margin-bottom: -4px;
+}
+
+.navigation-menu__burger {
+    width: inherit;
+    height: inherit;
+    position: relative;
+    transition-duration: 1s;
+    cursor: pointer;
+    transition: all;
+}
+
+.navigation-menu__burger span {
+    height: 2px;
+    width: 50%;
+    background-color: black;
+    border-radius: 20px;
+    position: absolute;
+    left: 25%;
+    top: 45%;
+    transition-duration: .25s;
+    transition-delay: .25s;   
+}
+
+.navigation-menu__burger span:before {
+    position: absolute;
+    top: -6px;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    content: "";
+    border-radius: 20px;
+    transition-duration: .25s;
+    transition: transform .25s, top .25s .25s;
+}
+
+.navigation-menu__burger span:after {
+    position: absolute;
+    top: 6px;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    content: "";
+    border-radius: 20px;
+    transition-duration: .25s;
+    transition: transform .25s, top .25s .25s;
+}
+
+.navigation-menu__burger.opened {
+    width: 15%;
+    height: 15%;
+    left: -60px;
+    top: -50px;
+}
+
+.navigation-menu__burger.opened span {
+    transition-duration: 0.1s;
+    transition-delay: .25s;
+    background: transparent;
+}
+
+.navigation-menu__burger.opened span:before {
+    transition: top .25s, transform .25s .25s;
+    top: 0px;
+    transform: rotateZ(-45deg);
+}
+
+.navigation-menu__burger.opened span:after {
+    transition: top 0.4s, transform .25s .25s;
+    top: 0px;
+    transform: rotateZ(45deg);
+}
+
+.burger-list {
+    list-style-type: none;
+    font-family: 'Raleway';
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.burger-list a {
+    color: #30322F;
+    text-decoration: none;
+}
+
+.header__navigation-item:hover {
+    background-color: rgb(247, 247, 247);
+    cursor: pointer;
+}
+
+.header__navigation-menu:hover {
+    background-color: white;
+    cursor: initial;
+}
+
+.header__navigation-item img {
+    height: 20px;
+    transition: all .2s;
+}
+
+.header__navigation-contacts {
+    width: 20rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__navigation-contacts_search-active {
+    width: 30rem;
+}
+
+/* Стили для описания музея сайта */
+
+.main {
+    background: url(../assets/images/main-bg.svg);
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-top: -17rem;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.main a {
+    text-align: center;
+    margin-top: .5rem;
+}
+
+.company-logo {
+    background-color: #dc634f;
+    border-radius: 50%;
+    border: 6px solid white;
+    width: 249px;
+    height: 249px;
+    margin: 0 auto;
+    margin-top: -8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+}
+
+.company-logo img {
+    width: 181px;
+    height: 202px;
+}
+
+.main__title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 110px;
+    line-height: 129px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    transition: all .2s;
+    color: #30322F;
+}
+
+.main__subtitle {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 109.3%;
+    text-align: center;
+    transition: all .2s;
+    color: #474A46;
+}
+
+.main__arrow-down {
+    width: 61px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    transition: all .2s;
+    animation: bounce2 2s ease infinite;
+}
+
+.main__description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 6rem;
+}
+
+.main__description-background {
+    width: 40%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.main__description-title {
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 106.8%;
+    color: #30322F;
+    margin-left: 20rem;
+    margin-bottom: 2rem;
+    width: 42%;
+}
+
+.main__description-text-list {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 20rem;
+    margin-bottom: 6rem;
+    width: 35%;
+}
+
+.main__description-text-item {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 125%;
+    margin-bottom: 16px;
+    color: #474A46;
+}
+
+.main__description-text-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Анимация подпрыгивания для стрелки */
+
+@keyframes bounce2 {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+/* Стили для блока направлений музея */
+
+.topics {
+    position: relative;
+    width: 100%;
+    padding-bottom: 22rem;
+}
+
+.topics__background {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.topics__title {
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 71px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #30322F;
+}
+
+.topics-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.topics-line {
+    display: flex;
+    margin-right: 40px;
+    margin-bottom: 37px !important;
+}
+
+.topics-line:last-child {
+    margin-bottom: 0;
+}
+
+
+.topic {
+    display: flex;
+    background-color: #EDEAE1;
+    border: 2px solid white;
+    border-radius: 61px;
+    align-items: center;
+    padding: 4px 16px;
+    width: max-content;
+    margin-right: 40px;
+    transition: all .3s;
+}
+
+.topic:last-child {
+    margin-right: 0;
+}
+
+/* Немного стилей для линий с напрвлениями, которых другой background */
+
+.topic_blue {
+    background-color: #177E89;
+}
+
+.topic_blue p {
+    color: white;
+}
+
+.topic_blue:hover p {
+    color: #545753;
+}
+
+.topic_orange {
+    background-color: #DC634F;
+}
+
+.topic_orange p {
+    color: white;
+}
+
+.topic_orange:hover p {
+    color: #545753;
+}
+
+/* ----------------------------------------------------------------- */
+
+.topic:hover {
+    background-color: white;
+    border: 2px solid #545753;
+}
+
+.topic:hover div {
+    background-color: #545753;
+}
+
+.topic:hover svg {
+    fill: white;
+}
+
+.topic__icon {
+    background-color: white;
+    width: 67px;
+    height: 47px;
+    margin-right: 14px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+.topic__icon svg {
+    fill: #545753;
+    transition: all .3s;
+}
+
+.topic__name {
+    color: #545753;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: 5%;
+}
+
+/* Стили для блока с партнёрами музея */
+
+.partners {
+    background-color: #177E89;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partners__title {
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.partners-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* Стили для формы обратной связи */
+
+.feedBack {
+    /* background-color: #DC634F; */
+    height: 100vh;
+    background: url(../assets/images/form-bg.svg), linear-gradient(to bottom, #DC634F, #DC634F);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedBack__title {
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 71px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.feedBack__subtitle {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 125%;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.feedBack__form-container {
+    border-radius: 72px;
+    width: 60rem;
+    margin: 0 auto;
+    margin-top: 44px;
+    margin-bottom: 82px;
+    padding: 3rem 0;
+    background-color: white;
+    display: flex;
+    transition: all .3s;
+}
+
+.feedBack__form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.feedBack__form input {
+    margin-bottom: 6px;
+    padding: 20px 20px;
+    border-radius: 20px;
+    -webkit-appearance: none;
+    -webkit-box-shadow: 0.021427px 0.399426px 13px rgb(0 0 0 / 11%), 0.00872954px 0.162729px 6.51852px rgb(0 0 0 / 9%), 0.00198399px 0.0369839px 3.14815px rgb(0 0 0 / 5%);
+    -moz-box-shadow: 0.021427px 0.399426px 13px rgb(0 0 0 / 11%), 0.00872954px 0.162729px 6.51852px rgb(0 0 0 / 9%), 0.00198399px 0.0369839px 3.14815px rgb(0 0 0 / 5%);
+    box-shadow: 0.021427px 0.399426px 13px rgb(0 0 0 / 11%), 0.00872954px 0.162729px 6.51852px rgb(0 0 0 / 9%), 0.00198399px 0.0369839px 3.14815px rgb(0 0 0 / 5%);
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 24px;
+    border: none;
+    color: #A5ACA2;
+}
+
+.feedBack__form input:focus {
+    outline: none;
+}
+
+.form__error-text {
+    color: red;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    transition: all .2s;
+    opacity: 0;
+}
+
+.control .form__error-text {
+    margin: 0;
+    margin-top: .3rem;
+    margin-left: 0;
+}
+
+.form__contacts-fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-wrapper {
+    width: 48%;
+}
+
+.contact-wrapper input {
+    width: -webkit-fill-available;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.form__accept-submit {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.form__accept-submit p {
+    width: fit-content;
+}
+
+.form__submit-btn {
+    background: #30322F;
+    border-radius: 25px;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 125%;
+    color: #FFFFFF;
+    border: none;
+    padding: 18px 0;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all .3s;
+}
+
+.form__submit-btn_submitted {
+    border: 2px solid #31322f;
+    background-color: white;
+    color: #31322f;
+}
+
+.accept-submit__text {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 125%;
+    color: #545753;
+    margin: 0;
+}
+
+.accept-submit__more-info {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 125%;
+    color: #545753;
+}
+
+/*  Стили для кастомного чекбокса  */
+
+.control {
+    font-family: arial;
+    display: block;
+    position: relative;
+    padding-left: 3rem;
+    /* margin-bottom: 20px; */
+    font-size: 16px;
+}
+
+.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.control_indicator {
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background: #ffffff;
+    border: 1px solid #5f5f5f;
+    border-radius: 4px;
+    transition: all .3s;
+    box-shadow: -0.00150235px 0.0370066px 3.14815px rgba(48, 50, 47, 0.001), 0.021427px 0.399426px 13px rgba(0, 0, 0, 0.11), 0.00872954px 0.162729px 6.51852px rgba(0, 0, 0, 0.0863704), 0.00198399px 0.0369839px 3.14815px rgba(0, 0, 0, 0.052963);
+}
+
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+    border: 1px solid black;
+}
+
+.control input:disabled ~ .control_indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.control input:checked ~ .control_indicator:after {
+    display: block;
+}
+
+.control-checkbox .control_indicator:after {
+    left: 8px;
+    top: -2px;
+    width: 6px;
+    height: 20px;
+    border: solid #de6551;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.control-checkbox input:disabled ~ .control_indicator:after {
+    border-color: #7b7b7b;
+}
+
+/* Стили для блока с контактами */
+
+.contacts {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts__title {
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: 0.04em;
+    color: #30322F;
+}
+
+.contacts__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 132px;
+}
+
+.contacts__item {
+    display: flex;
+    width: 32rem;
+    padding: 12px 0;
+    padding-left: 12px;
+    border-radius: 72px;
+    margin-bottom: 26px;
+    align-items: center;
+    border: 3px solid white;
+    text-decoration: none !important;
+    transition: all .3s;
+}
+
+.contacts__item:first-child {
+    background-color: #177E89;
+}
+
+.contacts__item:nth-child(2) {
+    background-color: #EDEAE1;
+}
+
+.contacts__item:nth-child(3) {
+    background-color: #DC634F;
+    margin-bottom: 0;
+}
+
+.contacts__item-icon {
+    background-color: white;
+    padding: 14px 19px;
+    border-radius: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+.contacts__item-icon svg {
+    fill: #545753;
+}
+
+.contacts__item-icon_email svg {
+    width: 38px;
+    height: 26px;
+}
+
+.contacts__item-icon_vk svg {
+    width: 39px;
+    height: 26px;
+}
+
+.contacts__item-icon_telegram svg {
+    width: 32px;
+    height: 27px;
+}
+
+.contacts__item-link {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.contacts__item-link_gray {
+    color: #545753;
+}
+
+.contacts__item:hover {
+    background-color: white;
+    border: 3px solid #545753;
+}
+
+.contacts__item:hover .contacts__item-link {
+    color: #545753;
+}
+
+.contacts__item:hover .contacts__item-icon {
+    background-color: #545753;
+}
+
+.contacts__item:hover .contacts__item-icon svg {
+    fill: white;
+}
+
+/* Стили для футера сайта */
+
+.footer {
+    background-color: #EDEAE1;
+    display: flex;
+    justify-content: center;
+    padding: 55px 0;
+}
+
+
+.footer__links-wrapper {
+    display: flex;
+    border-bottom: 2px solid #30322F;
+    width: max-content;
+}
+
+.footer__links-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 240px;
+}
+
+.links-info__title {
+    display: flex;
+    align-items: center;
+}
+
+.links-info__title-icon {
+    background-color: #30322F;
+    border: 2px solid white;
+    padding: 10px 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 9px;
+    border-radius: 72px;
+}
+
+.links-info__title-text {
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 32.9842px;
+    line-height: 49px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #30322F;
+    margin: 0;
+}
+
+.links-info__subtitle {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #30322F;
+}
+
+.links-info__links {
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.links-info__links svg {
+    fill: #30322F;
+    height: 19px;
+}
+
+.links-info__links a {
+    margin-right: 20px;
+    border: 2px solid transparent;
+}
+
+.links-info__links a svg {
+    transition: all .3s;
+}
+
+.links-info__links a:hover svg {
+    fill: black;
+}
+
+.links-info__links a:last-child {
+    margin-right: 0;
+}
+
+.links-info__developer-info {
+    display: flex;
+    align-items: center;
+}
+
+.developer-info__title {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #30322F;
+    margin-right: 9px;
+}
+
+.developer-info__icon {
+    background-color: #30322F;
+    border-radius: 72px;
+    padding: 22px 7px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: 0.04em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.links-list {
+    list-style-type: none;
+}
+
+.links-list__item:first-child {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: #30322F;
+    margin-bottom: 24px;
+}
+
+.links-list__item:first-child:hover {
+    padding: 0;
+    box-shadow: none;
+}
+
+.links-list__item {
+    font-family: 'Raleway';
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    margin-bottom: 16px;
+    width: max-content;
+    border-radius: 16px;
+    transition: all .3s;
+}
+
+.links-list__item:hover a {
+    font-size: 19px;
+}
+
+.links-list__item a {
+    font-weight: 400;
+    text-decoration: none;
+    color: #30322F;
+    letter-spacing: 0.04em;
+    font-size: 18px;
+    line-height: 21px;
+    transition: all .3s;
+}
+
+.links-list__item:last-child {
+    margin-bottom: 0;
+}
+
+.footer__copyright-info {
+    display: flex;
+    align-items: baseline;
+}
+
+.copyright-info__title {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #545753;
+    margin-right: 13.5rem;
+}
+
+.copyright-info__links {
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright-info__links a {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #545753;
+    text-decoration: none;
+    margin-bottom: 16px;
+    transition: all .3s;
+    border-radius: 16px;
+}
+
+.copyright-info__links a:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 1700px) {
+    .header {
+        height: 40rem;
+    }
+}
+
+@media (max-width: 1500px) {
+    .header {
+        height: 40rem;
+    }
+
+    .main {
+        margin-top: -13rem;
+    }
+}

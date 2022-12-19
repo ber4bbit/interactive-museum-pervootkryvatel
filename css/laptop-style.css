@@ -1,0 +1,251 @@
+@media (max-width: 1700px) {
+    .header__navigation {
+        margin-left: 16rem;
+    }
+}
+
+@media (min-width: 421px) and (max-width: 1361px) {
+
+    .header {
+        height: 34rem;
+    }
+
+    .header__navigation {
+        width: 80%;
+        margin-top: 23px;
+        margin-left: 6rem;
+    }
+
+    .header__navigation-item {
+        width: 45px;
+        height: 45px;
+    }
+
+    .header__navigation-item img {
+        height: 18px;
+    }
+
+    .header__navigation-menu img {
+        height: 10px !important;
+    }
+
+    .company-logo {
+        width: 177px;
+        height: 177px;
+        margin-top: -6rem;
+    }
+
+    .company-logo img {
+        width: 129px;
+        height: 144px;
+    }
+
+    .main__title {
+        font-size: 64px;
+        line-height: 96px;
+    }
+
+    .main__subtitle {
+        font-size: 18px;
+    }
+
+    .main__arrow-down {
+        width: 37px;
+    }
+
+    .main__description {
+        background-position: right 6rem !important;
+    }
+
+    .main__description-text-list {
+        padding-left: 4rem;
+    }
+
+    .main__description-title {
+        font-size: 36px;
+        margin-left: 4rem;
+    }
+
+    .main__description-text-item {
+        font-size: 18px;
+    }
+
+    .topics {
+        padding-bottom: 16rem;
+    }
+
+    .partners-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 2rem;
+        align-items: center;
+    }
+
+    .partners-container img:nth-child(1),img:nth-child(5) {
+        width: 229px;
+    }
+
+    .partners-container img:nth-child(2) {
+        width: 202px;
+    }
+
+    .partners-container img:nth-child(3) {
+        width: 267px;
+    }
+
+    .partners-container img:nth-child(4) {
+        width: 263px;
+    }
+
+    .feedBack__title {
+        font-size: 36px;
+        line-height: 53px;
+    }
+    
+    .feedBack__subtitle {
+        font-size: 18px;
+    }
+
+    .feedBack__form-container {
+        margin-top: 32px;
+        width: 40rem;
+    }
+
+    .feedBack__form input {
+        font-size: 18px;
+    }
+
+    .form__submit-btn {
+        font-size: 18px;
+    }
+
+    .contact-wrapper {
+        width: 45%;
+    }
+
+    .accept-submit__text, .accept-submit__more-info {
+        font-size: 11px;
+    }
+
+    .control_indicator {
+        width: 20px;
+        height: 20px;
+    }
+
+    .control-checkbox .control_indicator:after {
+        left: 7px;
+        top: -2px;
+        width: 4px;
+        height: 18px;
+    }
+
+    .contacts__wrapper {
+        margin-bottom: 82px;
+    }
+
+    .contacts__item {
+        width: 30rem;
+    }
+
+    .contacts__title {
+        font-size: 36px;
+        line-height: 53px;
+    }
+
+    .contacts__item-link {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .contacts__item-icon_email svg {
+        width: 29px;
+        height: 20px;
+    }
+    
+    .contacts__item-icon_vk svg {
+        width: 29px;
+        height: 18px;
+    }
+    
+    .contacts__item-icon_telegram svg {
+        width: 24px;
+        height: 20px;
+    }
+
+    .links-info__title-text {
+        font-size: 24px;
+        line-height: 37px;
+    }
+
+    .links-info__subtitle {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .developer-info__title {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .links-list__item:first-child {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .links-list__item a {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .links-info__title-icon {
+        padding: 8px 10px;
+    }
+
+    .copyright-info__title {
+        font-size: 14px;
+        line-height: 16px;
+        margin-right: 14.2rem;
+    }
+
+    .copyright-info__links a {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .header {
+        background-position: 0 48%;
+    }
+
+    .footer__links-info {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        height: 28rem;
+    }
+
+    .main {
+        margin-top: -10rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .header {
+        height: 24rem;
+    }
+
+    .main {
+        margin-top: -7rem;
+    }
+}
+
+@media (max-width: 820px) {
+    .header {
+        background-position: 0 60%;
+    }
+}
