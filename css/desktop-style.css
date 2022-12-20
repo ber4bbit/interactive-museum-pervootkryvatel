@@ -3,6 +3,13 @@ body {
     overflow-x: hidden;
 }
 
+:root {
+    --orange-color: #dc634f;
+    --cyan-color: #177e89;
+    --beige-color: #edeae1;
+    --lightBlack-color: #31322f;
+}
+
 /* Стили для куки */
 
 .cookie {
@@ -579,6 +586,7 @@ body {
     color: #FFFFFF;
     margin-bottom: 0;
     position: relative;
+    text-align: center;
     z-index: 2;
 }
 
@@ -898,22 +906,21 @@ body {
     z-index: 2;
 }
 
-
 .footer__links-wrapper {
     display: flex;
     border-bottom: 2px solid #30322F;
-    width: max-content;
 }
 
 .footer__links-info {
     display: flex;
     flex-direction: column;
-    margin-right: 240px;
+    width: 100%;
 }
 
 .links-info__title {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .links-info__title-icon {
@@ -941,34 +948,48 @@ body {
 .links-info__subtitle {
     font-family: 'Raleway';
     font-weight: 700;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 21px;
     letter-spacing: 0.04em;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #30322F;
+    margin-top: 0;
 }
 
 .links-info__links {
     display: flex;
-    margin-bottom: 4rem;
+}
+
+.links-info__links-wrapper {
+    margin-right: 1rem;
 }
 
 .links-info__links svg {
-    fill: #30322F;
+    fill: white;
     height: 19px;
 }
 
 .links-info__links a {
     margin-right: 20px;
     border: 2px solid transparent;
+    background-color: var(--lightBlack-color);
+    padding: .3em .6em;
+    border-radius: 18px;
+    display: flex;
+    transition: all .3s;
 }
 
 .links-info__links a svg {
     transition: all .3s;
 }
 
+.links-info__links a:hover {
+    background-color: white;
+    border: 2px solid var(--lightBlack-color);
+}
+
 .links-info__links a:hover svg {
-    fill: black;
+    fill: var(--lightBlack-color);
 }
 
 .links-info__links a:last-child {
