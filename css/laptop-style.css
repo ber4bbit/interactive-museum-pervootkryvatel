@@ -2,9 +2,21 @@
     .header__navigation {
         margin-left: 16rem;
     }
+
+    .main__description { 
+        background-position: right 6rem !important;
+    }
+
+    .main__description-title {
+        margin-left: 10rem;
+    }
+
+    .main__description-text-list {
+        padding-left: 10rem;
+    }
 }
 
-@media (min-width: 421px) and (max-width: 1361px) {
+@media (min-width: 421px) and (max-width: 1390px) {
 
     .header {
         height: 34rem;

@@ -1,4 +1,21 @@
 @media screen and (max-width: 500px) {
+    .cookie {
+        padding: 8px 0;
+    }
+
+    .cookie__text {
+        font-size: 8px;
+        line-height: 12px;
+        margin-left: 12px;
+        width: 16rem;
+    }
+
+    .cookie__btn {
+        font-size: 12px;
+        padding: 2px 11px;
+        line-height: normal;
+    }
+
     .header_notFound {
         height: 67vh !important;
     }
