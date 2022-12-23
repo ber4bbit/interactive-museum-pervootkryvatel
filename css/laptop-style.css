@@ -178,8 +178,12 @@
     }
 
     .links-info__subtitle {
-        font-size: 14px;
+        font-size: 18px;
         line-height: 16px;
+    }
+
+    .links-info__links-wrapper {
+        margin-right: 1.5rem;
     }
 
     .developer-info__title {
@@ -213,6 +217,36 @@
     }
 }
 
+@media (min-width: 500px) and (max-width: 1025px) {
+    .main__description {
+        align-items: center;
+    }
+
+    .main__description-title {
+        width: 70%;
+    }
+    
+    .main__description-text-list {
+        width: 70%;
+        padding-left: 2rem;
+        margin-bottom: 50vh;
+    }
+
+    .main__description-background {
+        width: 90%;
+        right: 5%;
+    }
+
+    .contacts__image:nth-child(1) {
+        left: -5%;
+        width: 35%;
+    }
+
+    .contacts__image:nth-child(2) {
+        right: -8%;
+        width: 40%;
+    }
+}
 
 @media (max-width: 1000px) {
     .header {

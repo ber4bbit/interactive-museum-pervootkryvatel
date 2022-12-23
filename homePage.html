@@ -15,11 +15,37 @@
     <title>Первооткрыватель</title>
 </head>
 <body>
-    <div style=" position: relative; overflow-x: hidden">
+    <div style="position: relative; overflow-x: hidden">
         <div class="cookie" id="cookieContainer">
             <p class="cookie__text">Мы используем файлы cookie, чтобы понимать, как вы взаимодействуете с сайтом. Нажимая “Принять”, вы
                 соглашаетесь с использованием файлов cookie.</p>
             <button class="cookie__btn">Принять</button>
+        </div>
+        <div class="accessability-panel accessability-panel_hidden">
+            <ul>
+                <li>
+                   <p class="panel__option-title">Шрифт</p>
+                   <div class="panel__buttons-wrapper">
+                    <button class="panel__button" id="fontBiggerBtn">+</button>
+                    <button class="panel__button" id="fontSmallerBtn">-</button>
+                </div>
+                </li>
+                <li>
+                    <p class="panel__option-title">Межстрочный интервал</p>
+                    <div class="panel__buttons-wrapper">
+                        <button class="panel__button">+</button>
+                        <button class="panel__button">-</button>
+                    </div>
+                </li>
+                <li>
+                    <p class="panel__option-title">Изображения</p>
+                    <div class="panel__buttons-wrapper">
+                        <button class="panel__button">Вкл</button>
+                        <button class="panel__button">Выкл</button>
+                    </div>
+                    
+                </li>
+            </ul>
         </div>
         <header class="header" id="header">
             <nav class="header__navigation">
@@ -40,14 +66,13 @@
                 </div>
                 <div class="header__navigation-contacts">
                     <input type="text" class="header__navigation-item header__navigation-item_search" readonly>
-                    <div class="header__navigation-item"><img src="./assets/icons/navigation-accessability-icon.svg" alt="Here must be accessability icon"></div>
+                    <div class="header__navigation-item" id="accessabilityBtn"><img src="./assets/icons/navigation-accessability-icon.svg" alt="Here must be accessability icon"></div>
                     <div class="header__navigation-item">
                         <a href="https://t.me/pervootkryvatelTG" target="_blank"><img src="./assets/icons/navigation-telegram-icon.svg" alt="Here must be telegram icon"></a>
                     </div>
                     <div class="header__navigation-item">
                         <a href="https://vk.com/museum_pervootkryvatel" target="_blank"><img src="./assets/icons/navigation-vk-icon.svg" alt="Here must be vk icon"></a>
                     </div>
-                    <div id="finevision_banner" class="header__navigation-item" onclick="finevision.activate_navbar()" ><img src="https://finevision.ru/static/banner1.jpg"><script src="https://finevision.ru/static/js/finevision_banner.js"></script></div>
                 </div>
             </nav>
             <img src="" alt="" class="header__background">
@@ -275,8 +300,8 @@
             </div>
         </section>
         <div class="feedBack-overlay"></div>
-        <section class="feedBack" id="feedBackForm">
-            <div class="feedBack-wrapper">
+        <section class="feedBack">
+            <div class="feedBack-wrapper" id="feedBackForm">
                 <p class="feedBack__title">Хотите попасть на нашу офлайн выставку?</p>
                 <p class="feedBack__subtitle">заполните форму, чтобы получить приглашение на открытие</p>
                 <div class="feedBack__form-container">
@@ -311,8 +336,8 @@
             </div>
         </section>
         <section class="contacts" id="contacts">
-            <img src="./assets/images/contacts-image-1.png" alt="" style="position: absolute; left: 0; bottom: -10%; width: 30%;">
-            <img src="./assets/images/contacts-image-2.png" alt="" style="position: absolute; right: -7%; bottom: -20%; width: 40%;">
+            <img src="./assets/images/contacts-image-1.png" alt="" class="contacts__image">
+            <img src="./assets/images/contacts-image-2.png" alt="" class="contacts__image">
             <p class="contacts__title">Контакты</p>
             <div class="contacts__wrapper">
                 <a target="_blank" href="mailto:info@pervootkryvatel.ru" class="contacts__item">
@@ -346,7 +371,7 @@
                 <div class="footer__links-wrapper">
                     <div class="footer__links-info">
                         <div class="links-info__title">
-                            <div style="display: flex; align-items: center;">
+                            <div style="display: flex; align-items: center;" class="links-info__developer-wrapper">
                                 <div class="links-info__title-icon">
                                     <img src="./assets/icons/footer/footer-title-icon.svg" alt="Here must be company logo">
                                 </div>
@@ -373,7 +398,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-top: 2rem;">
                             <div class="links-info__developer-info">
                                 <p class="developer-info__title">Сайт разработан веб-студией</p>
                                 <p class="developer-info__icon">Treg</p>
@@ -428,5 +453,6 @@
     <script src="./js/validate/consts.js"></script>
     <script src="./js/validate/handlers.js"></script>
     <script src="./js/cookieHandler.js"></script>
+    <script src="./js/accessabilityHandler.js"></script>
 </body>
 </html>

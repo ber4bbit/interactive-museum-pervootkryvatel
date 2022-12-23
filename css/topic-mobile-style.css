@@ -1,0 +1,245 @@
+@media screen and (max-width: 500px) {
+    .header_notFound {
+        height: 67vh !important;
+    }
+
+    .header__navigation {
+        justify-content: space-around;
+    }
+
+    .navigation-menu__burger {
+        margin-right: 0;
+    }
+
+    .main__articles {
+        grid-template-columns: 1fr;
+    }
+
+    .articles__article:nth-child(4) {
+        grid-column-start: auto;
+    }
+
+    .feedback {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .feedback__form {
+        padding: 0 2em;
+        padding-top: 2em;
+        padding-bottom: 0em;
+        border-radius: 24px;
+    }
+
+    .feedback-title {
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 1rem;
+    }
+
+    .feedback-subtitle {
+        font-size: 14px;
+    }
+
+    .contact-input {
+        font-size: 12px;
+        padding: 10px 16px;
+        border-radius: 12px;
+    }
+
+    .form__submit-btn {
+        font-size: 12px;
+        padding: 6px 0;
+        border-radius: 12px;
+    }
+
+    .form__error-text {
+        font-size: 12px;
+        margin: .4rem 0;
+        margin-left: 0.5rem;
+    }
+
+    .accept-submit__text, .accept-submit__more-info {
+        font-size: 8px;
+    }
+
+    .control {
+        padding-left: 1.5rem;
+    }
+
+    .control_indicator {
+        height: 15px;
+        width: 15px;
+    }
+
+    .control-checkbox .control_indicator:after {
+        left: 4px;
+        top: -1px;
+        width: 3px;
+        height: 10px;
+    }
+
+    .contacts__wrapper {
+        margin-bottom: 4rem;
+    }
+
+    .contacts__image {
+        display: none;
+    }
+
+    .contacts__item {
+        width: 100%;
+        padding: 8px 8px;
+    }
+
+    .contacts__item-icon {
+        padding: 8px 4px;
+    }
+
+    .contacts__item-icon svg {
+        height: 14px;
+    }
+
+    .contacts__title {
+        font-size: 32px;
+        line-height: 36px;
+        margin: 0;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .contacts__item-link {
+        font-size: 16px;
+        line-height: 14px;
+    }
+
+    .contacts__item-link {
+        margin-left: 1rem;
+    }
+
+    .links-info__subtitle {
+        display: none;
+    }
+
+    .links-info__developer-wrapper {
+        margin-left: 1rem;
+    }
+
+    .links-list__item:first-child {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .links-list__item a {
+        font-size: 10px;
+    }
+
+    .links-info__title-icon {
+        padding: 0px 0px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .links-info__title-icon img {
+        width: 26px;
+        height: 26px;
+    }
+
+    .developer-info__title {
+        font-size: 12px;
+        line-height: 14px;
+        margin-right: 0.2rem;
+    }
+
+    .developer-info__icon {
+        font-size: 5px;
+        line-height: 11px;
+        padding: 5px 3px;
+    }
+
+    .links-info__links {
+        margin-bottom: 0;
+    }
+
+    .links-info__links a {
+        background-color: #30322F;
+        width: 30px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2px 6px;
+        border-radius: 72px;
+        transition: all .3s;
+        margin-right: 0.5em;
+    }
+
+    .links-info__links-wrapper {
+        margin-right: 1.5rem;
+    }
+
+    .footer__links-wrapper {
+        flex-direction: column;
+    }
+
+    .footer__copyright-info {
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+
+    .links-list__item {
+        margin-bottom: 0;
+    }
+
+    .footer__links-list-wrapper:nth-child(1) {
+        margin-right: 1rem;
+    }
+
+    .copyright-info__title {
+        font-size: 10px;
+        line-height: 12px;
+        margin-right: 0;
+        margin-bottom: 0.3rem;
+    }
+
+    .copyright-info__links a {
+        font-size: 10px;
+        line-height: 12px;
+        margin-bottom: 4px;
+    }
+
+    .links-info__developer-info {
+        width: max-content;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        width: 34%;
+    }
+
+    .links-info__title-text {
+        font-size: 20px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 371px) {
+    .navigation-list__item {
+        margin-right: 0.4rem;
+    }
+
+    .topic-title {
+        font-size: 56px;
+    }
+
+    .topic-subtitle {
+        font-size: 12px;
+    }
+
+    .articles__article:nth-child(4) .article__title {
+        width: 100%;
+    }
+
+    
+}
+
+
+

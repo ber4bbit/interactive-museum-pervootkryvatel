@@ -18,40 +18,32 @@
     <section class="header header_cyan">
         <header>
             <nav class="header__navigation">
-                <div class="navigation-burger">
-                    <span></span>
+                <div class="header__navigation-item header__navigation-menu">
+                    <div class="navigation-menu__burger">
+                        <span></span>
+                    </div>
+                    <div class="navigation-menu__burger-list">
+                        <ul class="burger-list">
+                            <li class="burger-list__item"><a href="">Главная</a></li>
+                            <li class="burger-list__item"><a href="#main">О проекте</a></li>
+                            <li class="burger-list__item"><a href="#topics">Направления</a></li>
+                            <li class="burger-list__item"><a href="#partners">Партнёры</a></li>
+                            <li class="burger-list__item"><a href="#feedBackForm">Оставить заявку</a></li>
+                            <li class="burger-list__item"><a href="#contacts">Контакты</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <span class="navigation-logo">Первооткрыватель</span>
-                <ul class="navigation-list">
-                    <li class="navigation-list__item">
-                        <a href="">
-                            <svg width="36" height="25" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.91564 0.303088C5.1424 0.816251 1.30693 4.3311 0.365447 9.05501C0.149018 10.1407 0.149018 11.9828 0.365447 13.0685C0.79716 15.2346 1.81359 17.1489 3.34801 18.6856C4.87602 20.2159 6.70728 21.1928 8.9383 21.6679C9.96161 21.8858 11.8847 21.8895 12.9504 21.6757C14.5622 21.3523 15.9323 20.7571 17.2581 19.8045L17.7908 19.4218L21.099 22.7315C22.9185 24.552 24.4926 26.0732 24.5969 26.112C25.4661 26.4354 26.311 25.5892 25.988 24.7188C25.9493 24.6143 24.428 23.0354 22.6074 21.2103L19.2973 17.8919L19.499 17.6326C20.4821 16.3692 21.2047 14.7666 21.5488 13.0869C21.755 12.0805 21.7741 10.1672 21.5875 9.20541C21.1487 6.94316 20.1335 5.00094 18.5728 3.43796C17.0338 1.89672 15.1576 0.891923 13.0162 0.462329C12.3557 0.32982 10.5361 0.236394 9.91564 0.303088ZM12.6454 2.58627C16.1159 3.32658 18.6754 5.89347 19.4292 9.38983C19.597 10.1679 19.597 11.9556 19.4292 12.7337C18.6738 16.2375 16.1283 18.7867 12.6298 19.5433C11.8529 19.7113 10.0679 19.7113 9.29095 19.5433C5.79445 18.7872 3.2465 16.2354 2.49152 12.7337C2.32376 11.9556 2.32376 10.1679 2.49152 9.38983C3.06633 6.72384 4.68123 4.58492 7.02576 3.38416C7.76799 3.00405 8.73064 2.67726 9.44382 2.56338C9.70332 2.52193 9.99147 2.47502 10.0841 2.45916C10.4412 2.39807 12.164 2.48353 12.6454 2.58627Z" fill="#30322F"/>
-                            </svg>    
-                        </a>
-                    </li>
-                    <li class="navigation-list__item">
-                        <button>
-                            <svg width="36" height="25" viewBox="0 0 36 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.38532 0.717464C5.72184 1.46583 0 13.8632 0 14.5521C0 14.8094 0.3006 15.1836 0.66816 15.3829C1.13184 15.6345 1.404 16.3259 1.55772 17.6437C1.99296 21.3702 4.56264 23.7004 8.65152 24.0764C11.9135 24.3761 14.4958 23.17 15.7165 20.7759C16.0366 20.1484 16.398 18.3968 16.5193 16.884L16.74 14.1333H18H19.26L19.4807 16.884C19.602 18.3968 19.9634 20.1484 20.2835 20.7759C21.5042 23.17 24.0865 24.3761 27.3485 24.0764C31.378 23.7059 33.9476 21.4195 34.4344 17.7719C34.5852 16.6406 34.925 15.7794 35.338 15.4815C35.7023 15.2194 36 14.7974 36 14.544C36 13.8606 30.2735 1.46072 29.6147 0.717464C28.5649 -0.466783 27.3938 0.0618208 26.293 2.21676C25.9578 2.87277 25.9535 3.17686 26.2735 3.49446C26.5903 3.80914 26.8898 3.66458 27.4903 2.90781C27.9284 2.35584 28.4134 1.9039 28.5682 1.9039C28.822 1.9039 30.7588 5.88157 32.9364 10.8745L33.7604 12.764L28.67 12.7184C25.8707 12.6935 22.689 12.7085 21.6 12.7516C19.0897 12.8513 16.9103 12.8513 14.4 12.7516C13.311 12.7085 10.1322 12.6873 7.33572 12.7045L2.2518 12.7363L3.06972 10.8606C5.24124 5.88121 7.1784 1.9039 7.43184 1.9039C7.58664 1.9039 8.07156 2.35584 8.50968 2.90781C9.11016 3.66458 9.40968 3.80914 9.72648 3.49446C10.4436 2.78296 8.72856 0.0786133 7.56 0.0786133C7.2252 0.0786133 6.69672 0.366279 6.38532 0.717464ZM14.49 14.5039C15.8645 15.0606 15.0739 19.7308 13.316 21.4385C12.3998 22.3285 11.8721 22.5165 9.98388 22.6275C6.08256 22.856 3.50928 20.9555 2.92104 17.4112C2.75508 16.4117 2.55672 15.3493 2.47968 15.0511C2.38032 14.6645 2.75436 14.436 3.78 14.2567C5.50476 13.9552 13.5972 14.1421 14.49 14.5039ZM32.04 14.2677C33.206 14.4568 33.6208 14.6795 33.5203 15.062C33.4433 15.3545 33.2449 16.4117 33.079 17.4112C32.6984 19.7034 31.882 20.8453 29.8588 21.9142C28.5671 22.5968 27.8291 22.7337 26.0161 22.6275C24.1279 22.5165 23.6002 22.3285 22.684 21.4385C21.4736 20.2627 20.885 18.564 20.8822 16.2394C20.88 14.6057 20.8944 14.594 23.4 14.1939C24.948 13.9468 30.3451 13.9928 32.04 14.2677Z" fill="#30322F"/>
-                            </svg>
-                        </button>
-                    </li>
-                    <li class="navigation-list__item">
-                        <a href="https://t.me/pervootkryvatelTG" target="_blank">
-                            <svg width="36" height="25" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.3626 1.00229C22.1699 1.07416 17.1641 3.0427 11.2386 5.37686C4.6022 7.991 0.416245 9.6677 0.33832 9.743C0.172013 9.90364 0.0821778 10.224 0.129979 10.486C0.211892 10.9348 0.241532 10.949 3.34735 12.0273C5.72285 12.8521 6.20302 13.0024 6.29722 12.9505C6.35908 12.9165 7.04657 12.4871 7.82496 11.9965C8.60336 11.5058 11.5423 9.65806 14.356 7.89032C19.6043 4.59306 19.6411 4.57217 19.6411 4.89034C19.6411 4.95756 17.9065 6.63625 14.7514 9.62243C12.062 12.1678 9.80372 14.3124 9.73301 14.3884C9.60707 14.5237 9.60087 14.5794 9.42481 17.1705C9.29839 19.0306 9.26072 19.8602 9.29779 19.9686C9.36004 20.1505 9.59769 20.2843 9.76292 20.2303C9.82716 20.2093 10.5836 19.4847 11.4438 18.6199C12.3041 17.7552 13.0282 17.0477 13.0529 17.0477C13.0776 17.0477 14.3518 18.0254 15.8845 19.2205C17.4171 20.4155 18.756 21.4394 18.8597 21.4959C19.2669 21.7178 19.864 21.5429 20.1463 21.1192C20.2376 20.9822 20.7179 18.8259 22.2566 11.6432C23.3523 6.52897 24.2488 2.27077 24.2488 2.18045C24.2488 1.84886 24.1212 1.56377 23.8464 1.28123C23.4222 0.845085 22.998 0.765348 22.3626 1.00229Z" fill="#30322F"/>
-                            </svg>    
-                        </a>
-                    </li>
-                    <li class="navigation-list__item">
-                        <a href="https://vk.com/museum_pervootkryvatel" target="_blank">
-                            <svg width="36" height="25" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.33464 2.3548C0.994375 9.63248 4.5104 14.4137 10.094 15.6267C11.0179 15.8274 12.2481 15.9935 12.8282 15.996L13.8827 16.0004V13.1977V10.395L14.565 10.5578C16.7427 11.0769 18.7144 12.7264 19.8247 14.9578L20.3438 16.0004H22.3235C23.5053 16.0004 24.3035 16.0281 24.3035 15.8732C24.3035 15.7303 23.9452 14.7276 23.5073 13.8071C22.6528 12.0104 20.6038 9.67063 19.2811 8.98109C18.8365 8.74913 18.4274 8.51818 18.372 8.46731C18.3167 8.41669 19.0122 7.67934 19.9178 6.82854C21.1447 5.67609 21.7844 4.81664 22.4272 3.45588C23.8307 0.485098 23.7665 0.526558 21.6417 0.485099H19.9178L19.2447 1.89367C18.2949 4.02053 16.145 6.17588 14.4486 6.70213C13.9033 6.87152 13.9519 6.84355 13.8827 3.74253V0.485099H12.0218L10.1039 0.461426V5.87906C10.0389 11.1339 10.0223 11.2924 9.54066 11.2122C8.69187 11.0711 7.17465 9.84715 6.3792 8.66189C5.30263 7.05797 4.75157 5.4164 4.39924 2.76303L4.09332 0.461426H2.13247H0.171875L0.33464 2.3548Z" fill="#30322F"/>
-                            </svg>    
-                        </a>
-                    </li>
-                </ul>
+                <div class="header__navigation-contacts">
+                    <input type="text" class="header__navigation-item header__navigation-item_search" readonly>
+                    <div class="header__navigation-item" id="accessabilityBtn"><img src="./assets/icons/navigation-accessability-icon.svg" alt="Here must be accessability icon"></div>
+                    <div class="header__navigation-item">
+                        <a href="https://t.me/pervootkryvatelTG" target="_blank"><img src="./assets/icons/navigation-telegram-icon.svg" alt="Here must be telegram icon"></a>
+                    </div>
+                    <div class="header__navigation-item">
+                        <a href="https://vk.com/museum_pervootkryvatel" target="_blank"><img src="./assets/icons/navigation-vk-icon.svg" alt="Here must be vk icon"></a>
+                    </div>
+                </div>
             </nav>
         </header>
         <main class="header__topic">
@@ -198,7 +190,7 @@
             <div class="footer__links-wrapper">
                 <div class="footer__links-info">
                     <div class="links-info__title">
-                        <div style="display: flex; align-items: center;">
+                        <div style="display: flex; align-items: center;" class="links-info__developer-wrapper">
                             <div class="links-info__title-icon">
                                 <img src="./assets/icons/footer/footer-title-icon.svg" alt="Here must be company logo">
                             </div>
@@ -225,12 +217,12 @@
                             </div>
                         </div>
                     </div>
-                    <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-top: 2rem;">
                         <div class="links-info__developer-info">
                             <p class="developer-info__title">Сайт разработан веб-студией</p>
                             <p class="developer-info__icon">Treg</p>
                         </div>
-                        <div style="display: flex; margin-right: 4rem;" class="footer__links-lists">
+                        <div style="display: flex;" class="footer__links-lists">
                             <div class="footer__links-list-wrapper">
                                 <ul class="links-list">
                                     <li class="links-list__item links-list__item_title">Разделы</li>
@@ -254,7 +246,6 @@
                             </div>
                         </div> 
                     </div>
-    
                 </div> 
             </div>
             <div class="footer__copyright-info">

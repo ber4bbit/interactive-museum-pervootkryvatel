@@ -1,0 +1,213 @@
+@media (max-width: 1361px) {
+    .header {
+        /* height: 34rem; */
+    }
+
+    .topic-logo-wrapper_medicine {
+        padding-top: 1em;
+        padding-left: 1.5em;
+        padding-right: 1em;
+    }
+
+    .topic-logo {
+        width: 74px;
+        height: 74px;
+    }
+
+    .topic-title {
+        line-height: 100px;
+        font-size: 4em;
+    }
+
+    .topic-image {
+        bottom: -15%;
+    }
+
+
+    .notFound-logo-wrapper {
+        margin-bottom: 0;
+        margin-top: 5rem;
+    }
+
+    .notFound-logo-wrapper span {
+        font-size: 230px;
+        line-height: 250px;
+    }
+
+    .notFound-logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .topic-title_notFound {
+        font-size: 44px;
+    }
+
+    .notFound-link {
+        font-size: 18px;
+    }
+
+    .article__image {
+        border: 6px solid white;
+    }
+
+    .feedback__form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1025px) {
+    .notFound-logo-wrapper span {
+        font-size: 200px;
+        line-height: 200px;
+    }
+
+    .topic-image {
+        bottom: 0%;
+    }
+
+    .topic-image_tech {
+        bottom: -6%;
+    }
+
+    .topic-image_science {
+        bottom: -5%;
+    }
+
+    .topic-logo {
+        width: 68px;
+        height: 68px;
+    }
+
+    .navigation-logo {
+        display: none;
+    }
+
+    .header__navigation {
+        justify-content: space-around;
+    }
+
+    .navigation-menu__burger {
+        margin-right: 0;
+    }
+
+    .topic-logo-wrapper_medicine {
+        padding-top: 1em;
+        padding-left: 1.2em;
+        padding-right: 0.8em;
+    }
+
+    .header__topic {
+        margin-top: 3rem;
+    }
+
+    .notFound-logo {
+        width: 170px;
+        height: 170px;
+    }
+
+    .notFound-link {
+        font-size: 16px;
+    }
+
+    .main__articles {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .articles__article:nth-child(4) {
+        height: 35rem;
+    }
+
+    .articles__article:nth-child(3) {
+        grid-row-start: 3;
+    }
+
+    .contacts__image:nth-child(1) {
+        left: -5%;
+        width: 35%;
+    }
+
+    .contacts__image:nth-child(2) {
+        right: -8%;
+        width: 40%;
+    }
+
+    .links-info__title-text {
+        font-size: 24px;
+        line-height: 37px;
+    }
+
+    .links-info__subtitle {
+        font-size: 18px;
+        line-height: 16px;
+    }
+
+    .links-info__links-wrapper {
+        margin-right: 1.5rem;
+    }
+
+    .developer-info__title {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .links-list__item:first-child {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .links-list__item a {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .links-info__title-icon {
+        padding: 8px 10px;
+    }
+
+    .copyright-info__title {
+        font-size: 14px;
+        line-height: 16px;
+        margin-right: 14.2rem;
+    }
+
+    .copyright-info__links a {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .contacts__image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .notFound-logo-wrapper span {
+        font-size: 160px;
+    }
+
+    .notFound-logo {
+        width: 130px;
+        height: 130px;
+    }
+
+    .topic-image {
+        display: none;
+    }
+
+    .topic-title_notFound {
+        font-size: 30px;
+    }
+
+    .notFound-link {
+        font-size: 14px;
+        margin-bottom: 10rem;
+        margin-top: 1rem;
+    }
+
+    .article__title {
+        font-size: 32px;
+    }
+}
